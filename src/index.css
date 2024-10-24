@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+}
+
+/* Add any additional custom styles here */
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 640px) {
+  button, 
+  [type='button'], 
+  [type='reset'], 
+  [type='submit'] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent horizontal scrolling on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Improve readability on mobile */
+p, li {
+  @apply leading-relaxed;
+}
+
+/* Adjust spacing for mobile */
+@media (max-width: 640px) {
+  .p-4 {
+    @apply p-3;
+  }
+  .m-4 {
+    @apply m-3;
+  }
+}
